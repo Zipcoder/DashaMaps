@@ -1,7 +1,5 @@
 package com.zipcodewilmington.dashamaps;
 
-import java.util.ArrayList;
-
 public class DashaMap implements HashMapX {
     private NodeArray nodeArray;
 
@@ -11,7 +9,7 @@ public class DashaMap implements HashMapX {
 
     public void add(String input, Integer value) {
         String key = input.substring(0,1);
-        Node<String, Integer> newNode = new Node<String,Integer>(input, value);
+        Node<String, Integer> newNode = new Node<>(input, value);
         newNode.linkToPrev(getLastInnerNode(key));
     }
 
@@ -25,12 +23,29 @@ public class DashaMap implements HashMapX {
         add(key, value);
     }
 
-    public String delete(String key) {
-        return null;
+    public String delete(String input) {
+        String key = input.substring(0, 1);
+        String out = "";
+        for (Node<String, Integer> node = getBucket(key).getNext(); node != null; node = node.getNext()) {
+            if (node.getKey().equals(input)) {
+                if (node.hasNext()) node.getNext().linkToPrev(node.getPrev());
+                else node.getPrev().setNext(null);
+                out = node.getKey();
+                break;
+            }
+        }
+        return out;
     }
 
-    public String get(String key) {
-        return null;
+    public String get(String input) {
+        String key = input.substring(0,1);
+        String out;// = String.valueOf(findInBucket(getBucket(key), input));
+        try {
+            out = findInBucket(getBucket(key), input).toString();
+        } catch(NullPointerException npe) {
+            out = null;
+        }
+        return out;
     }
 
     public Boolean isEmpty() {
@@ -57,6 +72,17 @@ public class DashaMap implements HashMapX {
 
     public Node<String, Integer> getBucket(String key) {
         return nodeArray.getNodeByKey(key);
+    }
+
+    public Integer findInBucket(Node<String, Integer> bucket, String input) {
+        Integer value = null;
+        for (Node<String, Integer> node = bucket.getNext(); node != null; node = node.getNext()) {
+            if (node.getKey().equals(input)) {
+                value = node.getValue();
+                break;
+            }
+        }
+        return value;
     }
 
     @Override
