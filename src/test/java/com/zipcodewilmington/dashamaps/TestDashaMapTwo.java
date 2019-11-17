@@ -8,51 +8,51 @@ public class TestDashaMapTwo {
     @Test
     public void testAdd() {
         DashaMap dashaMap = new DashaMapTwo();
-        dashaMap.add("apples", 245);
-        dashaMap.add("google", 345);
-        dashaMap.add("lamp", 23);
-        dashaMap.add("anagram", 33);
+        dashaMap.set("apples", 245);
+        dashaMap.set("google", 345);
+        dashaMap.set("lamp", 23);
+        dashaMap.set("anagram", 33);
         String actual = dashaMap.toString();
-        String expected = "0\ta\n" +
+        String expected = "a\n" +
                 "\tlamp\t23\n" +
-                "1\tb\n" +
-                "2\tc\n" +
-                "3\td\n" +
-                "4\te\n" +
-                "5\tf\n" +
-                "6\tg\n" +
-                "7\th\n" +
-                "8\ti\n" +
-                "9\tj\n" +
-                "10\tk\n" +
-                "11\tl\n" +
-                "12\tm\n" +
-                "13\tn\n" +
+                "b\n" +
+                "c\n" +
+                "d\n" +
+                "e\n" +
+                "f\n" +
+                "g\n" +
+                "h\n" +
+                "i\n" +
+                "j\n" +
+                "k\n" +
+                "l\n" +
+                "m\n" +
+                "n\n" +
                 "\tanagram\t33\n" +
-                "14\to\n" +
+                "o\n" +
                 "\tgoogle\t345\n" +
-                "15\tp\n" +
+                "p\n" +
                 "\tapples\t245\n" +
-                "16\tq\n" +
-                "17\tr\n" +
-                "18\ts\n" +
-                "19\tt\n" +
-                "20\tu\n" +
-                "21\tv\n" +
-                "22\tw\n" +
-                "23\tx\n" +
-                "24\ty\n" +
-                "25\tz\n";
+                "q\n" +
+                "r\n" +
+                "s\n" +
+                "t\n" +
+                "u\n" +
+                "v\n" +
+                "w\n" +
+                "x\n" +
+                "y\n" +
+                "z\n";
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testSize() {
         DashaMap dashaMap = new DashaMapTwo();
-        dashaMap.add("apples", 245);
-        dashaMap.add("google", 345);
-        dashaMap.add("lamp", 23);
-        dashaMap.add("anagram", 33);
+        dashaMap.set("apples", 245);
+        dashaMap.set("google", 345);
+        dashaMap.set("lamp", 23);
+        dashaMap.set("anagram", 33);
         Long actual = dashaMap.size();
         Long expected = 4L;
         Assert.assertEquals(expected, actual);
@@ -61,10 +61,10 @@ public class TestDashaMapTwo {
     @Test
     public void testIsEmpty1() {
         DashaMap dashaMap = new DashaMapTwo();
-        dashaMap.add("apples", 245);
-        dashaMap.add("google", 345);
-        dashaMap.add("lamp", 23);
-        dashaMap.add("anagram", 33);
+        dashaMap.set("apples", 245);
+        dashaMap.set("google", 345);
+        dashaMap.set("lamp", 23);
+        dashaMap.set("anagram", 33);
         Assert.assertFalse(dashaMap.isEmpty());
     }
 
@@ -77,7 +77,7 @@ public class TestDashaMapTwo {
     @Test
     public void testBucketSize1() {
         DashaMap dashaMap = new DashaMapTwo();
-        dashaMap.add("anagram", 33);
+        dashaMap.set("anagram", 33);
         Assert.assertTrue(dashaMap.bucketSize("n"));
     }
 
@@ -90,18 +90,18 @@ public class TestDashaMapTwo {
     @Test
     public void testToStringBrief() {
         DashaMap dashaMap = new DashaMapTwo();
-        dashaMap.add("apples", 245);
-        dashaMap.add("google", 345);
-        dashaMap.add("lamp", 23);
-        dashaMap.add("anagram", 33);
+        dashaMap.set("apples", 245);
+        dashaMap.set("google", 345);
+        dashaMap.set("lamp", 23);
+        dashaMap.set("anagram", 33);
         String actual = dashaMap.toStringBrief();
-        String expected = "0\ta\n" +
+        String expected = "a\n" +
                 "\tlamp\t23\n" +
-                "1\tn\n" +
+                "n\n" +
                 "\tanagram\t33\n" +
-                "2\to\n" +
+                "o\n" +
                 "\tgoogle\t345\n" +
-                "3\tp\n" +
+                "p\n" +
                 "\tapples\t245\n";
         Assert.assertEquals(expected, actual);
     }
@@ -109,10 +109,10 @@ public class TestDashaMapTwo {
     @Test
     public void testFindInBucket() {
         DashaMap dashaMap = new DashaMapTwo();
-        dashaMap.add("apples", 245);
-        dashaMap.add("google", 345);
-        dashaMap.add("lamp", 23);
-        dashaMap.add("anagram", 33);
+        dashaMap.set("apples", 245);
+        dashaMap.set("google", 345);
+        dashaMap.set("lamp", 23);
+        dashaMap.set("anagram", 33);
         Node<String, Integer> bucket = dashaMap.getBucket("p");
         Integer actual = dashaMap.findInBucket(bucket, "apples");
         Integer expected = 245;
@@ -122,10 +122,10 @@ public class TestDashaMapTwo {
     @Test
     public void testGet() {
         DashaMap dashaMap = new DashaMapTwo();
-        dashaMap.add("catatonic", 245);
-        dashaMap.add("castaway", 345);
-        dashaMap.add("creates", 23);
-        dashaMap.add("cantaloupe", 33);
+        dashaMap.set("catatonic", 245);
+        dashaMap.set("castaway", 345);
+        dashaMap.set("creates", 23);
+        dashaMap.set("cantaloupe", 33);
         String actual = dashaMap.get("castaway");
         String expected = "345";
         Assert.assertEquals(expected, actual);
@@ -135,7 +135,7 @@ public class TestDashaMapTwo {
     public void testFillMapWithText() {
         DashaMap dashaMap = getMap();
         String actual = dashaMap.toStringBrief();
-        String expected = "0\ta\n" +
+        String expected = "a\n" +
                 "\twas\t6\n" +
                 "\thave\t4\n" +
                 "\thas\t6\n" +
@@ -145,10 +145,10 @@ public class TestDashaMapTwo {
                 "\teach\t6\n" +
                 "\tsame\t77\n" +
                 "\tcan\t100\n" +
-                "1\tb\n" +
+                "b\n" +
                 "\tabout\t99\n" +
                 "\tabove\t56\n" +
-                "2\te\n" +
+                "e\n" +
                 "\tme\t2\n" +
                 "\twe\t7\n" +
                 "\the\t2\n" +
@@ -166,15 +166,15 @@ public class TestDashaMapTwo {
                 "\there\t54\n" +
                 "\tfew\t12\n" +
                 "\tvery\t54\n" +
-                "3\tf\n" +
+                "f\n" +
                 "\tif\t5\n" +
                 "\tof\t9\n" +
                 "\tafter\t6\n" +
                 "\toff\t5\n" +
-                "4\tg\n" +
+                "g\n" +
                 "\tagainst\t0\n" +
                 "\tagain\t7\n" +
-                "5\th\n" +
+                "h\n" +
                 "\tshe\t6\n" +
                 "\tthey\t4\n" +
                 "\tthem\t4\n" +
@@ -199,7 +199,7 @@ public class TestDashaMapTwo {
                 "\twhy\t7\n" +
                 "\tthan\t23\n" +
                 "\tshould\t6\n" +
-                "6\ti\n" +
+                "i\n" +
                 "\ti\t1\n" +
                 "\thim\t3\n" +
                 "\this\t4\n" +
@@ -207,11 +207,11 @@ public class TestDashaMapTwo {
                 "\tdid\t5\n" +
                 "\twith\t8\n" +
                 "\twill\t76\n" +
-                "7\tl\n" +
+                "l\n" +
                 "\tall\t9\n" +
-                "8\tm\n" +
+                "m\n" +
                 "\tam\t7\n" +
-                "9\tn\n" +
+                "n\n" +
                 "\tan\t77\n" +
                 "\tand\t9\n" +
                 "\tuntil\t7\n" +
@@ -222,7 +222,7 @@ public class TestDashaMapTwo {
                 "\tonce\t54\n" +
                 "\tany\t2\n" +
                 "\tonly\t23\n" +
-                "10\to\n" +
+                "o\n" +
                 "\tyou\t3\n" +
                 "\tyour\t4\n" +
                 "\tyours\t5\n" +
@@ -245,22 +245,22 @@ public class TestDashaMapTwo {
                 "\tso\t12\n" +
                 "\ttoo\t87\n" +
                 "\tnow\t5\n" +
-                "11\tp\n" +
+                "p\n" +
                 "\tup\t8\n" +
-                "12\tr\n" +
+                "r\n" +
                 "\tare\t9\n" +
                 "\tor\t6\n" +
                 "\tfrom\t45\n" +
-                "13\ts\n" +
+                "s\n" +
                 "\tis\t8\n" +
                 "\tas\t98\n" +
-                "14\tt\n" +
+                "t\n" +
                 "\tit\t0\n" +
                 "\tits\t3\n" +
                 "\titself\t6\n" +
                 "\tat\t0\n" +
                 "\tother\t9\n" +
-                "15\tu\n" +
+                "u\n" +
                 "\tour\t8\n" +
                 "\tours\t12\n" +
                 "\tourselves\t8\n" +
@@ -270,11 +270,11 @@ public class TestDashaMapTwo {
                 "\tfurther\t77\n" +
                 "\tsuch\t54\n" +
                 "\tjust\t12\n" +
-                "16\tv\n" +
+                "v\n" +
                 "\tover\t34\n" +
-                "17\tw\n" +
+                "w\n" +
                 "\town\t76\n" +
-                "18\ty\n" +
+                "y\n" +
                 "\tmy\t2\n" +
                 "\tmyself\t4\n" +
                 "\tby\t6\n";

@@ -3,14 +3,18 @@ package com.zipcodewilmington.dashamaps;
 public class NodeArray {
     private Node<String, Integer> head;
     private Node<String, Integer> tail;
-    final char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+    final String[] alphabet = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z".split(",");
 
     public NodeArray () {
-        this.head = initNodeArray();
+        this.head = initNodeArray(this.alphabet);
     }
 
-    public Node<String, Integer> initNodeArray() {
-        for (char letter : alphabet) {
+    public NodeArray (String placeholder) {
+        this.head = null;
+    }
+
+    public Node<String, Integer> initNodeArray(String[] alphabet) {
+        for (String letter : alphabet) {
             addAdjNode(String.valueOf(letter));
         }
         return this.head;
@@ -35,11 +39,12 @@ public class NodeArray {
     }
 
     public Node<String, Integer> getFirst() {
-        Node<String, Integer> node = tail;
-        while (node.hasAdjPrev()) {
-            node = node.getAdjPrev();
-        }
-        return node;
+        return this.head;
+//        Node<String, Integer> node = tail;
+//        while (node.hasAdjPrev()) {
+//            node = node.getAdjPrev();
+//        }
+//        return node;
     }
 
     public Node<String, Integer> getNodeByIndex(int index) {

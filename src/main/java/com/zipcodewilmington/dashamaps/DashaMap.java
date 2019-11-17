@@ -2,15 +2,9 @@ package com.zipcodewilmington.dashamaps;
 
 public class DashaMap implements HashMapX {
     public NodeArray nodeArray;
-    // TODO add different hashing methods
+
     public DashaMap() {
         nodeArray = new NodeArray();
-    }
-
-    public void add(String input, Integer value) {
-        String key = input.substring(0, 1);
-        Node<String, Integer> newNode = new Node<>(input, value);
-        newNode.linkToPrev(getLastInnerNode(key));
     }
 
     public Node<String, Integer> getLastInnerNode(String key) {
@@ -19,12 +13,18 @@ public class DashaMap implements HashMapX {
         return node;
     }
 
-    public void set(String key, Integer value) {
-        add(key, value);
+    public void performSet(String key, String input, Integer value) {
+        if (!hasHashNode(key)) nodeArray.addAdjNode(key);
+        Node<String, Integer> newNode = new Node<>(input, value);
+        newNode.linkToPrev(getLastInnerNode(key));
     }
 
-    public String delete(String input) {
+    public void set(String input, Integer value) {
         String key = input.substring(0, 1);
+        performSet(key, input, value);
+    }
+
+    public String performDelete(String input, String key) {
         String out = "";
         for (Node<String, Integer> node = getBucket(key).getNext(); node != null; node = node.getNext()) {
             if (node.getKey().equals(input)) {
@@ -37,15 +37,24 @@ public class DashaMap implements HashMapX {
         return out;
     }
 
-    public String get(String input) {
-        String key = input.substring(0,1);
-        String out;// = String.valueOf(findInBucket(getBucket(key), input));
+    public String delete(String input) {
+        String key = input.substring(0, 1);
+        return performDelete(input, key);
+    }
+
+    public String performGet(String input, String key) {
+        String out;
         try {
             out = findInBucket(getBucket(key), input).toString();
         } catch(NullPointerException npe) {
             out = null;
         }
         return out;
+    }
+
+    public String get(String input) {
+        String key = input.substring(0,1);
+        return performGet(input, key);
     }
 
     public Boolean isEmpty() {
@@ -64,10 +73,10 @@ public class DashaMap implements HashMapX {
 
     protected Boolean bucketSize(String key) {
         int size = 0;
-        for (Node<String, Integer> node = getBucket(key).getNext(); node != null; node = node.getNext()) {
+        for (Node<String, Integer> node = getBucket(key); node != null; node = node.getNext()) {
             size++;
         }
-        return size > 0;
+        return size > 1;
     }
 
     public Node<String, Integer> getBucket(String key) {
@@ -88,9 +97,9 @@ public class DashaMap implements HashMapX {
     @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
-        int count = 0;
+//        int count = 0;
         for (Node<String, Integer> node = nodeArray.getFirst(); node != null; node = node.getAdjNext()) {
-            output.append(String.format("%s\t%s\n", count++, node.getKey()));
+            output.append(String.format("%s\n", /*count++, */node.getKey()));
             output.append(mappedItemsToString(node.getKey()));
         }
         return output.toString();
@@ -98,10 +107,9 @@ public class DashaMap implements HashMapX {
 
     public String toStringBrief() {
         StringBuilder output = new StringBuilder();
-        int count = 0;
         for (Node<String, Integer> node = nodeArray.getFirst(); node != null; node = node.getAdjNext()) {
             if (node.getNext() != null) {
-                output.append(String.format("%s\t%s\n", count++, node.getKey()));
+                output.append(String.format("%s\n", node.getKey()));
                 output.append(mappedItemsToString(node.getKey()));
             }
         }
@@ -115,6 +123,12 @@ public class DashaMap implements HashMapX {
         }
         return output.toString();
     }
+
+    public Boolean hasHashNode(String key) {
+        return (nodeArray.getNodeByKey(key) != null);
+    }
+
+
 
 
 //    public DashaMap(K key, V value) {
