@@ -48,12 +48,18 @@ public class TestNodeArray {
     }
 
     @Test
-    public void testGetNodeByIndex() {
+    public void testGetNodeByIndex1() {
         NodeArray nodes = new NodeArray();
         String actual = nodes.getNodeByIndex(24).getKey();
         String expected = "y";
         Assert.assertEquals(expected, actual);
 
+    }
+
+    @Test
+    public void testGetNodeByIndex2() {
+        NodeArray nodes = new NodeArray();
+        Assert.assertNull(nodes.getNodeByIndex(35));
     }
 
 }

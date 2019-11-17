@@ -26,12 +26,12 @@ public class Node<K, V> {
         this.adjNext = adjNext;
     }
 
-    public Boolean hasAdjPrev() {
-        return adjPrev != null;
-    }
-    public Node<K, V> getAdjPrev() {
-        return this.adjPrev;
-    }
+//    public Boolean hasAdjPrev() {
+//        return adjPrev != null;
+//    }
+//    public Node<K, V> getAdjPrev() {
+//        return this.adjPrev;
+//    }
     public Node<K, V> setAdjPrev(Node<K, V> adjPrev) {
         this.adjPrev = adjPrev;
         return this.adjPrev;
@@ -57,44 +57,44 @@ public class Node<K, V> {
         return this.prev;
     }
 
-    public Boolean hasPrev() {
-        return (prev != null);
-    }
+//    public Boolean hasPrev() {
+//        return (prev != null);
+//    }
 
     public K getKey() {
         return this.key;
     }
 
-    public Node<K, V> setKey(K key) {
-        this.key = key;
-        return this;
-    }
+//    public Node<K, V> setKey(K key) {
+//        this.key = key;
+//        return this;
+//    }
 
     public V getValue() {
         return this.value;
     }
 
-    public Node<K, V> setValue(V value) {
-        this.value = value;
-        return this;
-    }
+//    public Node<K, V> setValue(V value) {
+//        this.value = value;
+//        return this;
+//    }
 
-    public Pair<K, V> getPair() {
-        return new Pair<>(this.key, this.value);
-    }
+//    public Pair<K, V> getPair() {
+//        return new Pair<>(this.key, this.value);
+//    }
 
-    public Node<K, V> setPair(K key, V value) {
-        this.setKey(key);
-        this.setValue(value);
-        return this;
-    }
+//    public Node<K, V> setPair(K key, V value) {
+//        this.setKey(key);
+//        this.setValue(value);
+//        return this;
+//    }
 
-    public Node<K, V> setPair(Pair<K, V> pair) {
-
-        this.setKey(pair.getKey());
-        this.setValue(pair.getValue());
-        return this;
-    }
+//    public Node<K, V> setPair(Pair<K, V> pair) {
+//
+//        this.setKey(pair.getKey());
+//        this.setValue(pair.getValue());
+//        return this;
+//    }
 
     public Node<K, V> getNext() {
         return this.next;
@@ -109,14 +109,14 @@ public class Node<K, V> {
         return (next != null);
     }
 
-    public Boolean compareTo(Node<K, V> next) {
-        return (this.getKey().toString().compareToIgnoreCase(next.getKey().toString()) > 0);
-    }
+//    public Boolean compareTo(Node<K, V> next) {
+//        return (this.getKey().toString().compareToIgnoreCase(next.getKey().toString()) > 0);
+//    }
 
-    public void swapNext() {
-        Pair<K, V> pair = getPair();
-        this.setPair(next.getPair()).getNext().setPair(pair);
-    }
+//    public void swapNext() {
+//        Pair<K, V> pair = getPair();
+//        this.setPair(next.getPair()).getNext().setPair(pair);
+//    }
 
     public void linkToPrev(Node<K, V> prev) {
         this.setPrev(prev).setNext(this);

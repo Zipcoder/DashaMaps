@@ -1,6 +1,6 @@
 package com.zipcodewilmington.dashamaps;
 
-public class DashaMap implements HashMapX {
+public abstract class DashaMap implements HashMapX {
     public NodeArray nodeArray;
 
     public DashaMap() {
@@ -19,10 +19,10 @@ public class DashaMap implements HashMapX {
         newNode.linkToPrev(getLastInnerNode(key));
     }
 
-    public void set(String input, Integer value) {
-        String key = input.substring(0, 1);
-        performSet(key, input, value);
-    }
+//    public abstract void set(String input, Integer value);// {
+//        String key = input.substring(0, 1);
+//        performSet(key, input, value);
+//    }
 
     public String performDelete(String input, String key) {
         String out = "";
@@ -37,10 +37,10 @@ public class DashaMap implements HashMapX {
         return out;
     }
 
-    public String delete(String input) {
-        String key = input.substring(0, 1);
-        return performDelete(input, key);
-    }
+//    public abstract String delete(String input);// {
+//        String key = input.substring(0, 1);
+//        return performDelete(input, key);
+//    }
 
     public String performGet(String input, String key) {
         String out;
@@ -52,10 +52,10 @@ public class DashaMap implements HashMapX {
         return out;
     }
 
-    public String get(String input) {
-        String key = input.substring(0,1);
-        return performGet(input, key);
-    }
+//    public abstract String get(String input);// {
+//        String key = input.substring(0,1);
+//        return performGet(input, key);
+//    }
 
     public Boolean isEmpty() {
         return (this.size() == 0L);
@@ -97,9 +97,8 @@ public class DashaMap implements HashMapX {
     @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
-//        int count = 0;
         for (Node<String, Integer> node = nodeArray.getFirst(); node != null; node = node.getAdjNext()) {
-            output.append(String.format("%s\n", /*count++, */node.getKey()));
+            output.append(String.format("%s\n", node.getKey()));
             output.append(mappedItemsToString(node.getKey()));
         }
         return output.toString();

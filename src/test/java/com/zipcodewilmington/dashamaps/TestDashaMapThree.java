@@ -298,14 +298,29 @@ public class TestDashaMapThree {
     }
 
     @Test
-    public void testDelete() {
+    public void testDelete1() {
         DashaMap dashaMap = getMap();
         dashaMap.delete("yourself");
         Assert.assertNull(dashaMap.get("yourself"));
     }
 
-    public DashaMap getMap() {
-        DashaMap dashaMap = new DashaMapThree();
+    @Test
+    public void testDelete2() {
+        DashaMapThree dashaMap = getMap();
+        String actual = dashaMap.delete("gibberish");
+        String expected = "deletion failed: item gibberish not found";
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testDelete3() {
+        DashaMapThree dashaMap = getMap();
+        dashaMap.delete("just");
+        Assert.assertNull(dashaMap.get("just"));
+    }
+
+    public DashaMapThree getMap() {
+        DashaMapThree dashaMap = new DashaMapThree();
         String[] text = Reader.readFile().split("\n");
         for (String t : text) {
             String[] pair = t.split(" +");

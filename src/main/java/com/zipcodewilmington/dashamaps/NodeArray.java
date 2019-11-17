@@ -40,11 +40,6 @@ public class NodeArray {
 
     public Node<String, Integer> getFirst() {
         return this.head;
-//        Node<String, Integer> node = tail;
-//        while (node.hasAdjPrev()) {
-//            node = node.getAdjPrev();
-//        }
-//        return node;
     }
 
     public Node<String, Integer> getNodeByIndex(int index) {

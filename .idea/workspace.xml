@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16758b06-b4a0-4f1d-844b-c1c64f8682b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMapThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMapTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/NodeArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/NodeArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMapThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMapThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestNodeArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestNodeArray.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,175 +17,140 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/DashaMaps$com_zipcodewilmington_dashamaps_in_DashaMaps.ic" NAME="com.zipcodewilmington.dashamaps in DashaMaps Coverage Results" MODIFIED="1574028683479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.zipcodewilmington.dashamaps.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="203" />
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMap.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-                  <folding>
-                    <element signature="e#250#251#0" expanded="true" />
-                    <element signature="e#293#294#0" expanded="true" />
-                    <element signature="e#708#709#0" expanded="true" />
-                    <element signature="e#724#725#0" expanded="true" />
-                    <element signature="e#1659#1660#0" expanded="true" />
-                    <element signature="e#2392#2393#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapTwo.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="52" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#94#95#0" expanded="true" />
-                    <element signature="e#116#117#0" expanded="true" />
-                    <element signature="e#808#809#0" expanded="true" />
-                    <element signature="e#839#840#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapThree.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="219">
-                  <caret line="17" column="77" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
-                  <folding>
-                    <element signature="e#761#762#0" expanded="true" />
-                    <element signature="e#792#793#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/Reader.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/HashMapX.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="10" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/NodeArray.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
-                  <folding>
-                    <element signature="e#244#245#0" expanded="true" />
-                    <element signature="e#263#264#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/Node.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="704">
-                  <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-                  <folding>
-                    <element signature="e#648#649#0" expanded="true" />
-                    <element signature="e#686#687#0" expanded="true" />
-                    <element signature="e#723#724#0" expanded="true" />
-                    <element signature="e#758#759#0" expanded="true" />
-                    <element signature="e#880#881#0" expanded="true" />
-                    <element signature="e#918#919#0" expanded="true" />
-                    <element signature="e#955#956#0" expanded="true" />
-                    <element signature="e#990#991#0" expanded="true" />
-                    <element signature="e#920#921#0" expanded="true" />
-                    <element signature="e#975#976#0" expanded="true" />
-                    <element signature="e#2649#2650#0" expanded="true" />
-                    <element signature="e#2697#2698#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMapThree.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" selection-start-line="9" selection-end-line="9" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/Node.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="404">
-                  <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#656#657#0" expanded="true" />
-                    <element signature="e#693#694#0" expanded="true" />
-                    <element signature="e#731#732#0" expanded="true" />
-                    <element signature="e#766#767#0" expanded="true" />
-                    <element signature="e#892#893#0" expanded="true" />
-                    <element signature="e#930#931#0" expanded="true" />
-                    <element signature="e#967#968#0" expanded="true" />
-                    <element signature="e#1002#1003#0" expanded="true" />
-                    <element signature="e#920#921#0" expanded="true" />
-                    <element signature="e#975#976#0" expanded="true" />
-                    <element signature="e#2649#2650#0" expanded="true" />
-                    <element signature="e#2678#2679#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestNodeArray.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2">
-                  <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/word-list.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1770">
-                  <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMapThree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="317" column="8" selection-start-line="317" selection-start-column="8" selection-end-line="317" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+              <folding>
+                <element signature="e#150#151#0" expanded="true" />
+                <element signature="e#193#194#0" expanded="true" />
+                <element signature="e#1833#1834#0" expanded="true" />
+                <element signature="e#1875#1876#0" expanded="true" />
+                <element signature="e#2548#2549#0" expanded="true" />
+                <element signature="e#2598#2599#0" expanded="true" />
+                <element signature="e#4264#4265#0" expanded="true" />
+                <element signature="e#4324#4325#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapThree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+              <folding>
+                <element signature="e#116#117#0" expanded="true" />
+                <element signature="e#163#164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapOne.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapTwo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/Reader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/HashMapX.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/NodeArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+              <folding>
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#1274#1275#0" expanded="true" />
+                <element signature="e#1306#1307#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+              <folding>
+                <element signature="e#648#649#0" expanded="true" />
+                <element signature="e#686#687#0" expanded="true" />
+                <element signature="e#723#724#0" expanded="true" />
+                <element signature="e#758#759#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#955#956#0" expanded="true" />
+                <element signature="e#990#991#0" expanded="true" />
+                <element signature="e#920#921#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#2649#2650#0" expanded="true" />
+                <element signature="e#2697#2698#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -204,28 +168,27 @@
       <list>
         <option value="$PROJECT_DIR$/word-list.txt" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestNodeArray.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/HashMapX.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/Reader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/HashMapOne.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/HashMapTwo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/HashMapThree.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapOne.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapTwo.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMapTwo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMapThree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapTwo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/NodeArray.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapThree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/Node.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestNodeArray.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapOne.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMapThree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMap.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="797" />
+    <option name="width" value="714" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -325,7 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestDashaMapThree">
+  <component name="RunManager" selected="JUnit.com.zipcodewilmington.dashamaps in DashaMaps">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -370,7 +333,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDashaMap.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDashaMapThree.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DashaMaps" />
       <extension name="coverage">
         <pattern>
@@ -379,15 +342,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.dashamaps" />
-      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.dashamaps.TestDashaMap" />
-      <option name="METHOD_NAME" value="testSize" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.dashamaps.TestDashaMapThree" />
+      <option name="METHOD_NAME" value="testAdd" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDashaMap.testToStringBrief" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDashaMapThree.testSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DashaMaps" />
       <extension name="coverage">
         <pattern>
@@ -396,8 +359,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.dashamaps" />
-      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.dashamaps.TestDashaMap" />
-      <option name="METHOD_NAME" value="testToStringBrief" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.dashamaps.TestDashaMapThree" />
+      <option name="METHOD_NAME" value="testSet" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -446,11 +409,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestDashaMapThree" />
         <item itemvalue="JUnit.com.zipcodewilmington.dashamaps in DashaMaps" />
+        <item itemvalue="JUnit.TestDashaMapThree" />
+        <item itemvalue="JUnit.TestDashaMapThree.testSet" />
+        <item itemvalue="JUnit.TestDashaMapThree.testAdd" />
         <item itemvalue="JUnit.TestDashaMap" />
-        <item itemvalue="JUnit.TestDashaMap.testSize" />
-        <item itemvalue="JUnit.TestDashaMap.testToStringBrief" />
       </list>
     </recent_temporary>
   </component>
@@ -468,7 +431,7 @@
       <workItem from="1565357963802" duration="4390000" />
       <workItem from="1573769165257" duration="34000" />
       <workItem from="1573837103827" duration="2806000" />
-      <workItem from="1573938838262" duration="14746000" />
+      <workItem from="1573938838262" duration="24223000" />
     </task>
     <task id="LOCAL-00001" summary="project structure set up">
       <created>1573837221355</created>
@@ -491,49 +454,63 @@
       <option name="project" value="LOCAL" />
       <updated>1573952554767</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added hashing sort of">
+      <created>1573954528716</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573954528716</updated>
+    </task>
+    <task id="LOCAL-00005" summary="DashaMapThree">
+      <created>1574025712943</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574025712943</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.16 at 20h 20m 53s.xml">
+    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.17 at 16h 52m 59s.xml">
       <configuration name="com.zipcodewilmington.dashamaps in DashaMaps" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.16 at 20h 21m 46s.xml">
+    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.17 at 16h 54m 25s.xml">
       <configuration name="com.zipcodewilmington.dashamaps in DashaMaps" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.16 at 20h 23m 01s.xml">
+    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.17 at 16h 55m 00s.xml">
       <configuration name="com.zipcodewilmington.dashamaps in DashaMaps" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.16 at 20h 23m 24s.xml">
+    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.17 at 16h 58m 33s.xml">
       <configuration name="com.zipcodewilmington.dashamaps in DashaMaps" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.16 at 20h 25m 44s.xml">
+    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.17 at 16h 59m 54s.xml">
       <configuration name="com.zipcodewilmington.dashamaps in DashaMaps" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.16 at 20h 26m 18s.xml">
+    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.17 at 17h 00m 23s.xml">
       <configuration name="com.zipcodewilmington.dashamaps in DashaMaps" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.16 at 20h 28m 40s.xml">
+    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.17 at 17h 00m 51s.xml">
       <configuration name="com.zipcodewilmington.dashamaps in DashaMaps" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.16 at 20h 29m 05s.xml">
+    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.17 at 17h 02m 33s.xml">
       <configuration name="com.zipcodewilmington.dashamaps in DashaMaps" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.16 at 20h 29m 28s.xml">
+    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.17 at 17h 06m 01s.xml">
       <configuration name="com.zipcodewilmington.dashamaps in DashaMaps" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.16 at 20h 31m 56s.xml">
+    <history-entry file="com_zipcodewilmington_dashamaps_in_DashaMaps - 2019.11.17 at 17h 07m 23s.xml">
       <configuration name="com.zipcodewilmington.dashamaps in DashaMaps" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21982000" />
+    <option name="totallyTimeSpent" value="31459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -543,7 +520,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -553,6 +530,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -571,7 +549,9 @@
     <MESSAGE value="project structure set up" />
     <MESSAGE value="lotta stuff: add HashMapX interface, NodeArray class, Node object, working on DashaMap methods" />
     <MESSAGE value="add Dashamap methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Dashamap methods" />
+    <MESSAGE value="added hashing sort of" />
+    <MESSAGE value="DashaMapThree" />
+    <option name="LAST_COMMIT_MESSAGE" value="DashaMapThree" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -591,95 +571,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/HashMapX.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestNodeArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        <state relative-caret-position="480">
+          <caret line="278" column="34" selection-start-line="278" selection-start-column="34" selection-end-line="278" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word-list.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#1659#1660#0" expanded="true" />
-            <element signature="e#2392#2393#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="53" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <element signature="e#110#111#0" expanded="true" />
-            <element signature="e#130#131#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
-          <folding>
-            <element signature="e#94#95#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMapTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="123" column="45" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
+        <state relative-caret-position="480">
+          <caret line="279" column="26" selection-start-line="279" selection-start-column="26" selection-end-line="279" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -709,32 +614,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestDashaMapThree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="249">
+          <caret line="317" column="8" selection-start-line="317" selection-start-column="8" selection-end-line="317" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/dashamaps/TestNodeArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word-list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1770">
+          <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/HashMapX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <element signature="e#150#151#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1875#1876#0" expanded="true" />
+            <element signature="e#2548#2549#0" expanded="true" />
+            <element signature="e#2598#2599#0" expanded="true" />
+            <element signature="e#4264#4265#0" expanded="true" />
+            <element signature="e#4324#4325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/NodeArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+        <state relative-caret-position="165">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding>
             <element signature="e#244#245#0" expanded="true" />
             <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapThree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="17" column="77" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
+        <state relative-caret-position="19">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
           <folding>
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#116#117#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/DashaMapTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/dashamaps/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
