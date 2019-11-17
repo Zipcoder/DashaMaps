@@ -1,14 +1,14 @@
 package com.zipcodewilmington.dashamaps;
 
 public class DashaMap implements HashMapX {
-    private NodeArray nodeArray;
-
+    public NodeArray nodeArray;
+    // TODO add different hashing methods
     public DashaMap() {
         nodeArray = new NodeArray();
     }
 
     public void add(String input, Integer value) {
-        String key = input.substring(0,1);
+        String key = input.substring(0, 1);
         Node<String, Integer> newNode = new Node<>(input, value);
         newNode.linkToPrev(getLastInnerNode(key));
     }
