@@ -1,27 +1,12 @@
-
 public class Node {
-
-
-    public Node next;
-    public String key;
-    public Integer value;
-
+    String key;
+    Integer value;
+    Node next = null;
 
     public Node(String key, Integer value, Node next) {
         this.key = key;
         this.value = value;
         this.next = next;
-    }
-
-    public Node() {
-        this.key = null;
-        this.value = null;
-        this.next = null;
-    }
-
-    public Node(String key, Integer value) {
-        this.key = key;
-        this.value = value;
     }
 
     public String getKey() {

@@ -1,6 +1,3 @@
-
-
-
 public interface HashMapX {
 
     // fundamentals
@@ -11,5 +8,5 @@ public interface HashMapX {
     public long size();
 
     // testing access
-    boolean bucketSize(String key); // used for tests
+    protected boolean bucketSize(String key); // used for tests
 }
