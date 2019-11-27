@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9ede8bd-81a4-4e4c-a149-323869c1baf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/zipcode/rocks/DashaMapOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/zipcode/rocks/HashMapX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/zipcode/rocks/DashaMapOneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a1cd8ae2-1bde-41f9-bc58-cd081c767439" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DashaMaps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DashaMaps.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/zipcode/rocks/DashaMapOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/zipcode/rocks/DashaMapOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/zipcode/rocks/HashMapX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/zipcode/rocks/HashMapX.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,24 +13,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1U7uUDCMJUo7qSjpZOA9PfavYxm" />
+  <component name="ProjectId" id="1UAFBoqL9Vc7cQ61rTDVjl2ngfk" />
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -59,21 +41,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="DashaMapOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DashaMaps" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java.io.zipcode.rocks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java.io.zipcode.rocks" />
-      <option name="MAIN_CLASS_NAME" value="java.io.zipcode.rocks.DashaMapOneTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -121,23 +88,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.DashaMapOneTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a9ede8bd-81a4-4e4c-a149-323869c1baf3" name="Default Changelist" comment="" />
-      <created>1574719967671</created>
+      <changelist id="a1cd8ae2-1bde-41f9-bc58-cd081c767439" name="Default Changelist" comment="" />
+      <created>1574791360070</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1574719967671</updated>
-      <workItem from="1574719969125" duration="1413000" />
+      <updated>1574791360070</updated>
+      <workItem from="1574791364060" duration="1912000" />
     </task>
     <servers />
   </component>

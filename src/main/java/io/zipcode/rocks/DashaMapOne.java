@@ -5,10 +5,10 @@ public class DashaMapOne implements HashMapX {
 
     class Node {
         String key;
-        String value;
+        Integer value;
         Node next;
 
-        public Node(String key, String value) {
+        public Node(String key, Integer value) {
             this.key = key;
             this.value = value;
             this.next = null;
@@ -63,7 +63,7 @@ public class DashaMapOne implements HashMapX {
     }
 
     @Override
-    public void set(String key, String value) {
+    public void set(String key, Integer value) {
         String keyhash =  HashFunctionOne(key);
         Node newval = new Node(key, value);
         appendTo(keyhash, newval);
@@ -76,7 +76,7 @@ public class DashaMapOne implements HashMapX {
     }
 
     @Override
-    public String get(String key) {
+    public Integer get(String key) {
         String keyhash =  HashFunctionOne(key);
         Node newnode = findIn(key);
         if (newnode != null) {
