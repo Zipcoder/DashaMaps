@@ -1,3 +1,5 @@
+package dashamaps;
+
 public interface HashMapX {
 
     // fundamentals
@@ -7,6 +9,5 @@ public interface HashMapX {
     public boolean isEmpty();
     public long size();
 
-    // testing access
-    protected boolean bucketSize(String key); // used for tests
+
 }

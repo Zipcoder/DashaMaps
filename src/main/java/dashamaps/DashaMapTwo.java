@@ -1,4 +1,6 @@
-public class DashaMapThree implements  HashMapX{
+package dashamaps;
+
+public class DashaMapTwo implements HashMapX {
     public void set(String key, String value){
 
     }
@@ -20,8 +22,5 @@ public class DashaMapThree implements  HashMapX{
         return 0;
     }
 
-    @Override
-    protected boolean bucketSize(String key) {
-        return false;
-    }
+
 }
