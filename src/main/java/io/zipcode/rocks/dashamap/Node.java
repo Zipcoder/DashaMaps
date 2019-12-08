@@ -1,17 +1,17 @@
-package java.io.zipcode.rocks;
+package io.zipcode.rocks.dashamap;
 
 public class Node {
     String key;
     Integer value;
     Node next;
 
-    public Node (String key, Integer value){
+    public Node(String key, Integer value) {
         this.key = key;
         this.value = value;
         this.next = null;
     }
 
-    public boolean hasNext(){
+    public boolean hasNext() {
         return this.next != null;
     }
 
@@ -19,7 +19,7 @@ public class Node {
         return this.next;
     }
 
-    public void setNext(Node nextNode){
+    public void setNext(Node nextNode) {
         this.next = nextNode;
     }
 
