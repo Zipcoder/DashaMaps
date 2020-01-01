@@ -1,32 +1,30 @@
 package dashamaps;
 
-public class DashaMapThree implements HashMapX {
-    public void set(String key, String value){
+public class DashaMapThree extends DashaMap {
 
-    }
-    public String delete(String key){
+    @Override
+    protected String HashFunction(String input) {
+        if (input.length() > 1) {
+            return String.valueOf(input.charAt(0)).toLowerCase() + String.valueOf(input.charAt(1)).toLowerCase();
+        }
         return null;
     }
 
-    public String get(String key){
-        Node head = find(key);
-        while(head != null){
-            if(head.getKey().equals(key)){
-                return head.getKey();
+    @Override
+    public long bucketSize(String key) {
+        String result = HashFunction(key);
+        int index = convertChar(result);
+        Node current = dashaNode[index];
+
+        int length = 0;
+        while(current != null){
+            String check = current.key.substring(0,2).toLowerCase();
+            if(check.equals(result)) {
+                length++;
             }
-            head = head.getNext();
+            current = current.next;
         }
-        return null;    }
 
-
-    public boolean isEmpty(){
-        return false;
+        return length;
     }
-
-
-    public long size(){
-        return 0;
-    }
-
-
 }

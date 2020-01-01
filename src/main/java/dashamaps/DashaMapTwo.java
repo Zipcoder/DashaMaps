@@ -1,26 +1,13 @@
 package dashamaps;
 
-public class DashaMapTwo implements HashMapX {
-    public void set(String key, String value){
+public class DashaMapTwo extends DashaMap{
+    // if Key = dog; this would use the second letter "o".
 
-    }
-    public String delete(String key){
+    @Override
+    protected String HashFunction(String input) {
+        if (input.length() > 1) {
+            return String.valueOf(input.charAt(1)).toLowerCase();
+        }
         return null;
     }
-
-    public String get(String key){
-        return null;
-    }
-
-
-    public boolean isEmpty(){
-        return false;
-    }
-
-
-    public long size(){
-        return 0;
-    }
-
-
 }

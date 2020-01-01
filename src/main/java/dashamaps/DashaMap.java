@@ -1,20 +1,101 @@
 package dashamaps;
 
-import dashamaps.Node;
+public abstract class DashaMap implements HashMapX {
+    Node[] dashaNode = new Node[26];
 
-public class DashaMap {
+    protected abstract String HashFunction(String input);
 
-    private String a_z = "abcdefghijklmnopqrstuvwxyz";
-    Node[] map = new Node[26];
+    public Integer convertChar(String key){
+        char c = key.charAt(0);//yu
+        int index = c - 'a';
 
-    public DashaMap(){
-        for(int i = 0; i < a_z.length(); i++){
-            map[i] = new Node("a",1, next );
-            map[i].setKey(String.valueOf(a_z.charAt(i)));
+        return index;
+    }
+
+    @Override
+    public void set(String key, Integer value) {
+        Node newNew = new Node(key, value);
+        String result = HashFunction(key);//yu
+        int index = convertChar(result);
+
+        Node head = dashaNode[index];
+
+        if(head == null){ // added first item to list
+            dashaNode[index] = newNew;
+        }
+        else{
+            while(head.next != null){
+                head = head.next;
+            }
+            head.next = newNew;
         }
     }
 
-    public Node[] getMap() {
-        return map;
+    @Override
+    public void delete(String key) {
+        String result = HashFunction(key);
+        int index = convertChar(result);
+
+        Node current = dashaNode[index];
+
+        if (current.key.equals(key)) {
+            dashaNode[index] = current.next;
+        }
+        while (current.next != null) {
+            if (current.next.key.equals(key)) {
+                current.next = current.next.next;
+            }
+            current = current.next;
+        }
+    }
+
+    @Override
+    public Integer get(String key) {
+        String result = HashFunction(key);
+        int index = convertChar(result);
+        Node current = dashaNode[index];
+        while (current != null){
+            if(current.key.equals(key)) {
+                return current.value;
+            }
+            current = current.next;
+        }
+        return null;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        if(size() == 0){
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public long size() {
+        int size = 0;
+        for(int i = 0; i < dashaNode.length; i++){
+            Node newNew = dashaNode[i];
+            while(newNew != null){
+                newNew = newNew.next;
+                size++;
+            }
+        }
+        return size;
+    }
+
+    @Override
+    public long bucketSize(String key) {
+        String result = HashFunction(key);
+        int index = convertChar(result);
+        Node current = dashaNode[index];
+
+        int length = 0;
+        while(current != null){
+            length++;
+            current = current.next;
+        }
+
+        return length;
     }
 }

@@ -1,48 +1,21 @@
 package dashamaps;
 
-
-
 public class Node {
     String key;
     Integer value;
-    Node next = null;
+    Node next;
 
-    public Node(String key, Integer value, Node next) {
+    public Node(String key, Integer value){
         this.key = key;
         this.value = value;
-        this.next = next;
+        this.next = null;
     }
 
-    public String getKey() {
-        return key;
+    public boolean hasNext(){
+        return (this.next != null);
     }
 
-    public void setKey(String key) {
-        this.key = key;
-    }
-
-    public Integer getValue() {
-        return value;
-    }
-
-    public void setValue(Integer value) {
-        this.value = value;
-    }
-
-    public Node getNext() {
-        return next;
-    }
-
-    public void setNext(Node next) {
-        this.next = next;
-    }
-
-    @Override
-    public String toString() {
-        return "Node{" +
-                "key ='" + key + '\'' +
-                ", value = " + value +
-                ", next = " + next +
-                '}';
+    public Node getNext(){
+        return this.next;
     }
 }
