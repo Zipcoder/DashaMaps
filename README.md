@@ -2,7 +2,7 @@
 
 Make a hash map (dashamap), your future self will be grateful after that *fateful* interview
 
-Build a hash-map. The idea is to have an array of nodes, each node them having a linked-list behind it.
+Build a hash-map. The idea is to have an array of nodes, each Node them having a linked-list behind it.
 
 ![Image of Data Structure for HashMap](./DataStructureHashMap.png)
 Why?
